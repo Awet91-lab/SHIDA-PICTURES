@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px;
+    background: #111;
+    color: white;
+}
+
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* important for mobile */
+    margin: 20px 0;
+}
+
+.contact-item {
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    color: gold;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 33.33%;
+    height: auto;
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+}
+.btn {
+    background: gold;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
